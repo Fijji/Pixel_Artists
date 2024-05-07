@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/projectGroup4/",
+    "build": "vite build --base=/Pixel_Artists/",
     "preview": "vite preview"
   },
   "devDependencies": {
