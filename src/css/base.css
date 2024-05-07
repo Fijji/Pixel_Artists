@@ -1,0 +1,16 @@
+:root {
+  --primary-font: "Manrope", sans-serif;
+  --black: #121417;
+  --green: #4dc274;
+  --gradient-green: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #fff;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+  color: #121417;
+}
