@@ -1,19 +1,149 @@
 :root {
-  --primary-font: "Manrope", sans-serif;
+  --primary-font: 'Manrope', sans-serif;
   --black: #121417;
   --green: #4dc274;
   --gradient-green: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
   --light-green: #d4fde1;
+  --lighter-green: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
+  --hover-green: #38ae5f;
 }
 
-h1 {
+body {
   font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 20px;
-  color: #121417;
+  color: var(--black);
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* .container {
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-bottom: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.section-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 144px;
+  height: 20px;
+  background-color: var(--lighter-green);
+  border-radius: 8px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 40px;
+  max-width: 665px;
+  text-align: center;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 12px;
+  padding: 16px 32px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+  background-color: var(--hover-green);
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-outline:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 116px;
+    height: 12px;
+    background-color: var(--lighter-green);
+    border-radius: 8px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 64px;
+    max-width: 665px;
+  }
+}

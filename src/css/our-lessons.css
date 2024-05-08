@@ -1,0 +1,106 @@
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border: 1px solid var(--green);
+  border-radius: 16px;
+}
+
+.lesson-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.lesson-item-price {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.lesson-item-text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: var(--black);
+  opacity: 0.5;
+  text-align: center;
+}
+
+.lesson-item-button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.lesson-item-button .button {
+  width: 100%;
+}
+
+.middle-item {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.middle-item .lesson-item-text {
+  color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .lesson-item {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .lessons-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .lesson-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .lesson-item-price {
+    margin-bottom: 32px;
+  }
+
+  .lesson-item-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    color: var(--black);
+    opacity: 0.5;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1024px;
+    padding: 0;
+  }
+
+  .lesson-item-price {
+    margin-bottom: 16px;
+  }
+
+  .lesson-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
