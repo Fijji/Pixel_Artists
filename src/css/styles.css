@@ -1,10 +1,3 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./components/container.css');
@@ -12,6 +5,7 @@
 @import url('./mobile-menu.css');
 @import url('./components/headline.css');
 @import url('./about_us.css');
+@import url('our_lessons.css');
 
 /* @media (min-resolution: 192dpi) {
   .container {
