@@ -1,0 +1,124 @@
+/* OVERLAY */
+.mobile-menu-overlay {
+  background-color: rgba(18, 20, 23, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-menu-overlay.is-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* MENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 20px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--green);
+  color: var(--white);
+  width: 240px;
+  text-align: center;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 384px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mobile-menu,
+  .mobile-menu-overlay {
+    display: none;
+  }
+}
+
+/* CLOSE BUTTON */
+.mobile-menu-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-close button {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-menu-close button,
+.mobile-menu-close button svg {
+  width: 32px;
+  height: 32px;
+}
+
+.mobile-menu-close button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-close button,
+  .mobile-menu-close button svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.mobile-menu-close button svg {
+  stroke: var(--white);
+}
+
+/* NAV LIST */
+.mobile-menu-list a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.mobile-menu-list li {
+  margin-bottom: 20px;
+}
+
+/* SOCIALS */
+.mobile-menu-socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.mobile-menu-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.mobile-menu-socials a svg {
+  fill: var(--white);
+}
