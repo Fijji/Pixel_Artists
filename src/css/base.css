@@ -2,7 +2,7 @@
   --primary-font: 'Manrope', sans-serif;
   --black: #121417;
   --green: #4dc274;
-  --gradient-green: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  --gradient-green: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --light-green: #d4fde1;
   --lighter-green: #bee8cc;
   --gray: #f3f5f6;
@@ -34,6 +34,18 @@ a {
   max-width: 375px;
   min-width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title-primary {
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.title-primary span {
+  color: var(--lighter-green);
 }
 
 .section-title {
@@ -99,11 +111,20 @@ a {
   color: var(--green);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
+.visually-hidden {
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
+@media screen and (max-width: 768px) {
   .section-title::after {
     width: 116px;
     height: 12px;
@@ -123,7 +144,12 @@ a {
   .button {
     padding: 16px 32px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.56;
+  }
+
+  .title-primary {
+    font-size: 60px;
+    line-height: 1.17;
   }
 
   .section-title {
@@ -140,8 +166,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1024px;
-    padding: 0;
+    max-width: 1280px;
+    padding: 0 64px;
   }
 
   .section {
