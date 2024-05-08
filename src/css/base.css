@@ -1,19 +1,32 @@
 :root {
-  --primary-font: "Manrope", sans-serif;
+  --primary-font: 'Manrope', sans-serif;
   --black: #121417;
+  --black-rgb: 18, 20, 23;
   --green: #4dc274;
   --gradient-green: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
   --light-green: #d4fde1;
+  --light-green-2: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(var(--black-rgb), 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 h1 {
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 20px;
-  color: #121417;
+  color: var(--black);
 }
-
-/* .container {
-} */
