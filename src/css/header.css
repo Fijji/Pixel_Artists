@@ -2,14 +2,6 @@
   margin-bottom: 8px;
 }
 
-.header-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  align-items: center;
-  background-color: var(--white);
-}
-
 .logo-link {
   color: var(--black);
   font-size: 20px;
