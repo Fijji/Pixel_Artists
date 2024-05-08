@@ -23,10 +23,3 @@ body {
     line-height: 1.67;
   }
 }
-
-h1 {
-  font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--black);
-}
