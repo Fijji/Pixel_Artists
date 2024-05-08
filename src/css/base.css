@@ -18,26 +18,9 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   color: var(--black);
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .section {
@@ -76,6 +59,7 @@ ul {
 
 .section-subtitle {
   font-size: 14px;
+  line-height: 1.7;
   opacity: 0.5;
   margin-bottom: 40px;
   max-width: 665px;
@@ -89,7 +73,7 @@ ul {
   color: var(--white);
   background-color: var(--green);
   border-radius: 12px;
-  padding: 16px 32px;
+  padding: 14px 32px;
   border: none;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -140,10 +124,12 @@ ul {
   }
 
   .container {
+    max-width: 768px;
     padding: 0 32px;
   }
 
   .button {
+    padding: 16px 32px;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -154,6 +140,7 @@ ul {
 
   .section-subtitle {
     font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 64px;
     max-width: 665px;
   }

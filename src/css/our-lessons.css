@@ -23,7 +23,7 @@
 .lesson-item-price {
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.37;
   margin-bottom: 40px;
 }
 
@@ -48,13 +48,14 @@
   width: 100%;
 }
 
-.middle-item {
+.active-item {
   background-color: var(--green);
   color: var(--white);
 }
 
-.middle-item .lesson-item-text {
+.active-item .lesson-item-text {
   color: var(--white);
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,10 +65,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .lessons-list {
     display: flex;
     flex-direction: row;
