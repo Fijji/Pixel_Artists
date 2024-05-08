@@ -66,12 +66,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 250ms ease-in-out;
 }
 
 .mobile-menu-close button,
 .mobile-menu-close button svg {
   width: 32px;
   height: 32px;
+}
+
+.mobile-menu-close button:hover {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 768px) {
