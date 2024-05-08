@@ -44,10 +44,6 @@
   margin-top: auto;
 }
 
-.lesson-item-button .button {
-  width: 100%;
-}
-
 .active-item {
   background-color: var(--green);
   color: var(--white);
