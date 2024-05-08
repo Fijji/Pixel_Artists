@@ -2,7 +2,7 @@
 @import url('./base.css');
 @import url('./header.css');
 @import url('./mobile-menu.css');
-@import url('./our-lessons.css');
+@import url('our_lessons.css');
 
 /* @media (min-resolution: 192dpi) {
   .container {
