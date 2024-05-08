@@ -91,7 +91,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--hover-green);
 }
 
@@ -103,7 +104,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-outline:hover {
+.button-outline:hover,
+.button-outline:focus {
   background-color: var(--white);
   color: var(--green);
 }
