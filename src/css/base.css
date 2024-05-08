@@ -31,7 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1024px;
+  max-width: 375px;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -105,16 +105,8 @@ a {
   }
 
   .section-title::after {
-    content: '';
-    position: absolute;
-    display: block;
     width: 116px;
     height: 12px;
-    background-color: var(--lighter-green);
-    border-radius: 8px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
   }
 }
 
@@ -147,6 +139,11 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1024px;
+    padding: 0;
+  }
+
   .section {
     padding-bottom: 150px;
   }
