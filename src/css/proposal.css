@@ -83,6 +83,11 @@
   letter-spacing: -0.28px;
 }
 
+.proposal .button {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .proposal {
     padding: 64px 18px 92px 18px;
