@@ -1,0 +1,147 @@
+/* For mobile devices */
+.hero-content {
+  padding: 425px 14px 72px 20px;
+  align-items: start;
+}
+
+.hero-section {
+  background-image: url(../img/hero/block_mob@2x.jpg),
+    url(../img/hero/block_mob@1x.jpg),
+    linear-gradient(
+      95.97deg,
+      rgba(0, 0, 0, 0.4) 36.36%,
+      rgba(0, 0, 0, 0) 51.43%
+    );
+  background-size: cover;
+  border-radius: 16px;
+  margin: 8px 20px 0px 20px;
+
+  width: calc(100%-40px);
+}
+
+.hero-text {
+  font-family: inherit;
+  font-size: 38px;
+  line-height: 1.05;
+  color: var(--white);
+  max-width: 295px;
+}
+
+.hero-english {
+  color: var(--lighter-green);
+}
+
+/* TODO: Apply correct style for the button. It is required to change our_lessons.css */
+.hero-button {
+  margin-top: 40px;
+  padding: 14px 78px;
+  max-width: 295px;
+}
+
+.hero-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-use {
+  fill: var(--green);
+}
+
+.hero-checkmark {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.hero-checkmark-container {
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.hero-checkmark-container:hover,
+.hero-checkmark-container:focus {
+  background-color: var(--green);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-checkmark-container:hover .hero-use,
+.hero-checkmark-container:focus .hero-use {
+  fill: var(--white);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .hero-section {
+    background-image: url(../img/hero/block_tab@2x.jpg),
+      url(../img/hero/block_tab@1x.jpg),
+      linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      );
+  }
+
+  .hero-content {
+    padding: 260px 32px 32px 32px;
+  }
+
+  .hero-button {
+    margin-top: 32px;
+    padding: 16px 64px;
+    max-width: 306px;
+  }
+
+  .hero-text {
+    font-size: 60px;
+    line-height: 1.16;
+    max-width: 488px;
+  }
+
+  .hero-checkmark {
+    margin-top: 215px;
+  }
+}
+
+/* For desktop */
+@media (min-width: 1280px) {
+  .hero-section {
+    background-image: url(../img/hero/block_desk@2x.jpg),
+      url(../img/hero/block_desk@1x.jpg),
+      linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      );
+  }
+
+  .hero-content {
+    padding: 164px 32px 32px 64px;
+  }
+
+  .hero-button {
+    margin-top: 32px;
+    padding: 16px 64px;
+    max-width: 306px;
+  }
+
+  .hero-text {
+    font-size: 60px;
+    line-height: 1.16;
+    max-width: 564px;
+  }
+
+  .hero-checkmark {
+    margin-top: 83px;
+  }
+}
