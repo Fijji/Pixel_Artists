@@ -14,9 +14,9 @@
     );
   background-size: cover;
   border-radius: 16px;
-  margin: 8px 20px 0px 20px;
+  margin: 8px auto 0px;
 
-  width: calc(100% - 40px);
+  max-width: 335px;
 }
 
 .hero-text {
@@ -92,9 +92,9 @@
       );
 
     border-radius: 30px;
-    margin: 32px 32px 0px 32px;
+    margin: 32px auto 0px;
 
-    width: calc(100% - 64px);
+    max-width: 704px;
   }
 
   .hero-content {
@@ -135,9 +135,9 @@
       );
 
     border-radius: 30px;
-    margin: 16px 64px 0px 64px;
+    margin: 16px auto 0px;
 
-    width: calc(100% - 128px);
+    max-width: 1152px;
   }
 
   .hero-content {
