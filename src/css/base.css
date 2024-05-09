@@ -151,3 +151,12 @@ a {
     padding-bottom: 150px;
   }
 }
+
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  flex-direction: row;
+}
