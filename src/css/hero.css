@@ -1,6 +1,6 @@
 /* For mobile devices */
 .hero-content {
-  padding: 425px 14px 72px 20px;
+  padding: 425px 14px 14px 20px;
   align-items: start;
 }
 
@@ -16,7 +16,7 @@
   border-radius: 16px;
   margin: 8px 20px 0px 20px;
 
-  width: calc(100%-40px);
+  width: calc(100% - 40px);
 }
 
 .hero-text {
@@ -90,6 +90,11 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       );
+
+    border-radius: 30px;
+    margin: 32px 32px 0px 32px;
+
+    width: calc(100% - 64px);
   }
 
   .hero-content {
@@ -111,6 +116,11 @@
   .hero-checkmark {
     margin-top: 215px;
   }
+
+  .hero-checkmark-container {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /* For desktop */
@@ -123,6 +133,11 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       );
+
+    border-radius: 30px;
+    margin: 16px 64px 0px 64px;
+
+    width: calc(100% - 128px);
   }
 
   .hero-content {
@@ -143,5 +158,10 @@
 
   .hero-checkmark {
     margin-top: 83px;
+  }
+
+  .hero-checkmark-container {
+    width: 48px;
+    height: 48px;
   }
 }
