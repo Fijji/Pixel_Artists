@@ -2,34 +2,4 @@
 @import url('./base.css');
 @import url('./header.css');
 @import url('./mobile-menu.css');
-@import url('our_lessons.css');
-
-/* @media (min-resolution: 192dpi) {
-  .container {
-  }
-} */
-
-/* @media (max-width: 767px) {
-  .menu {
-      display: none;
-  }
-} */
-
-/* @media (min-width: 768px) {
-  .menu-toggle {
-      display: none;
-  }
-} */
-
-/* @media screen and (min-width: 1158px) {
-  .container {
-      min-width: 1158px;
-      margin: 0 auto;
-      width: 90%;
-  }
-
-@media screen and (min-width: 1158px) {
-  .container {
-      max-width: 1158px;
-  }
-} */
+@import url('./our_lessons.css');
