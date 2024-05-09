@@ -15,16 +15,135 @@
     href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
   
   <script type="module" crossorigin src="/Pixel_Artists/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/Pixel_Artists/assets/index-543277ec.css">
+  <link rel="stylesheet" href="/Pixel_Artists/assets/index-79d001bd.css">
 </head>
 
 <body>
-  <header>
-        <!-- Loads the specified .html file // todo: include header.html -->
-    <section>
-      <h1>Example page title</h1>
-    </section>
-  </header>
+    <header class="header-section">
+  <div class="container header-container">
+    <nav class="page-navigation">
+      <a href="./index.html" class="logo-link" aria-label="englishexcellence logo">english<span
+          class="logo-link-color">excellence</span>.</a>
+      <ul class="page-nav-list list">
+        <li class="page-nav-list-item">
+          <a href="#about" class="page-nav-list-link link" aria-label="link to section about us">About us</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#lessons" class="page-nav-list-link link" aria-label="link to section lessons">Our lessons</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#teachers" class="page-nav-list-link link" aria-label="link to section teachers">Teachers</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#feedback" class="page-nav-list-link link" aria-label="link to section feedback">Reviews</a>
+        </li>
+        <li class="page-nav-list-item">
+          <a href="#form" class="page-nav-list-link link" aria-label="link to section contact us">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu"
+      aria-label="open menu">
+      <svg class="mobile-menu-btn-icon mobile" width="32" height="23">
+        <use href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-nav"></use>
+      </svg>
+      <svg class="mobile-menu-btn-icon tablet" width="40" height="28">
+        <use href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-nav_bold"></use>
+      </svg>
+    </button>
+    <div class="page-header-socials">
+      <ul class="page-header-socials-list list">
+        <li class="page-header-socials-list-items">
+          <a href="https://www.facebook.com/goITclub/" class="page-header-socials-link link" target="_blank"
+            aria-label="link to facebook page">
+            <svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-header-socials-list-items">
+          <a href="https://www.instagram.com/goitclub/" class="page-header-socials-link link" target="_blank"
+            aria-label="link to instagram page">
+            <svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-header-socials-list-items">
+          <a href="https://www.youtube.com/c/GoIT" class="page-header-socials-link link" target="_blank"
+            aria-label="link to youtube channel">
+            <svg class="page-header-social-link-icon" width="28" height="28">
+              <use href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+    <!-- MOBILE MENU START -->
+<div class="mobile-menu-overlay js-menu-overlay"></div>
+<div class="mobile-menu js-menu-container">
+  <div class="mobile-menu-close">
+    <button class="js-close-menu" type="button">
+      <svg class="icon icon-close_bold">
+        <use xlink:href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-close_bold"></use>
+      </svg>
+    </button>
+  </div>
+
+  <ul class="mobile-menu-list">
+    <li>
+      <a href="#about-us">About us</a>
+    </li>
+    <li>
+      <a href="#lessons">Our lessons</a>
+    </li>
+    <li>
+      <a href="#teachers">Teachers</a>
+    </li>
+    <li>
+      <a href="#reviews">Reviews</a>
+    </li>
+    <li>
+      <a href="#contact-us">Contact us</a>
+    </li>
+  </ul>
+
+  <ul class="mobile-menu-socials">
+    <li>
+      <a
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg class="icon icon-facebook" width="26" height="26">
+          <use xlink:href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg class="icon icon-insta" width="26" height="26">
+          <use xlink:href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-insta"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener">
+        <svg class="icon icon-youtube" width="26" height="26">
+          <use xlink:href="/Pixel_Artists/assets/icons-b6c890cd.svg#icon-youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- MOBILE MENU END -->
+
 
   <main>
     <!-- Loads the specified .html file -->
@@ -81,70 +200,6 @@
   <footer>
     
   </footer>
-
-  <!-- MOBILE MENU START -->
-<div class="mobile-menu-overlay js-menu-overlay"></div>
-<div class="mobile-menu js-menu-container">
-  <div class="mobile-menu-close">
-    <button class="js-close-menu" type="button">
-      <svg class="icon icon-close_bold">
-        <use xlink:href="/Pixel_Artists/assets/icons-12c049fd.svg#icon-close_bold"></use>
-      </svg>
-    </button>
-  </div>
-
-  <ul class="mobile-menu-list">
-    <li>
-      <a href="#about-us">About us</a>
-    </li>
-    <li>
-      <a href="#lessons">Our lessons</a>
-    </li>
-    <li>
-      <a href="#teachers">Teachers</a>
-    </li>
-    <li>
-      <a href="#reviews">Reviews</a>
-    </li>
-    <li>
-      <a href="#contact-us">Contact us</a>
-    </li>
-  </ul>
-
-  <ul class="mobile-menu-socials">
-    <li>
-      <a
-        href="https://www.facebook.com/goITclub/"
-        target="_blank"
-        rel="noopener"
-      >
-        <svg class="icon icon-facebook" width="26" height="26">
-          <use xlink:href="/Pixel_Artists/assets/icons-12c049fd.svg#icon-facebook"></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.instagram.com/goitclub/"
-        target="_blank"
-        rel="noopener"
-      >
-        <svg class="icon icon-insta" width="26" height="26">
-          <use xlink:href="/Pixel_Artists/assets/icons-12c049fd.svg#icon-insta"></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener">
-        <svg class="icon icon-youtube" width="26" height="26">
-          <use xlink:href="/Pixel_Artists/assets/icons-12c049fd.svg#icon-youtube"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
-<!-- MOBILE MENU END -->
-
 
   <script
     defer
