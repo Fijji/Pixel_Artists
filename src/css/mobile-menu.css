@@ -30,7 +30,6 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--green);
-  color: var(--white);
   width: 240px;
   text-align: center;
 }
@@ -56,6 +55,12 @@
 .mobile-menu-close {
   display: flex;
   justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-close {
+    padding-right: 12px;
+  }
 }
 
 .mobile-menu-close button {
@@ -96,6 +101,11 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
+  color: var(--white);
+}
+
+.mobile-menu-list a:hover {
+  text-decoration: underline;
 }
 
 .mobile-menu-list li {
@@ -117,6 +127,11 @@
   height: 42px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-menu-socials a:hover {
+  opacity: 0.7;
 }
 
 .mobile-menu-socials a svg {
