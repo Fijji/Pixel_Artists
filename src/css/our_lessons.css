@@ -18,6 +18,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
+  letter-spacing: -0.4px;
 }
 
 .lesson-item-price {
@@ -52,12 +53,6 @@
 .active-item .lesson-item-text {
   color: var(--white);
   opacity: 0.7;
-}
-
-@media screen and (max-width: 768px) {
-  .lesson-item {
-    max-width: 335px;
-  }
 }
 
 @media screen and (min-width: 768px) {
