@@ -1,0 +1,204 @@
+.proposal {
+  background: var(--gradient-green);
+  border-radius: 16px;
+  padding: 40px 20px 64px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.proposal .title-primary {
+  margin-bottom: 65px;
+}
+
+.proposal-card {
+  padding: 40px 20px;
+  border-radius: 16px;
+  background: var(--white);
+  position: relative;
+}
+
+.proposal-card::before,
+.proposal-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.proposal-card::before {
+  transform: rotate(11deg);
+  background-color: var(--white);
+  opacity: 0.5;
+  z-index: -2;
+}
+
+.proposal-card::after {
+  transform: rotate(-9deg);
+  background-color: var(--light-green);
+  z-index: -1;
+}
+
+.proposal-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 20px;
+}
+
+.proposal-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.icon-done {
+  background: var(--green);
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.icon-done svg {
+  width: 12px;
+  height: 12px;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.28px;
+}
+
+@media screen and (min-width: 768px) {
+  .proposal {
+    padding: 64px 18px 92px 18px;
+    border-radius: 30px;
+    overflow: initial;
+  }
+
+  .proposal-card {
+    padding: 64px 32px;
+    border-radius: 30px;
+    background-image: url('../img/stack_of_books/books@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom 64px right -50px;
+    background-size: 214px 263px;
+  }
+
+  .proposal-card::before,
+  .proposal-card::after {
+    border-radius: 30px;
+  }
+
+  .proposal-card::before {
+    transform: rotate(10.655deg);
+  }
+
+  .proposal-card::after {
+    transform: rotate(-9.864deg);
+  }
+
+  .proposal .title-primary {
+    padding: 0 14px;
+    margin-bottom: 84px;
+  }
+
+  .proposal-card-title,
+  .proposal-card-list {
+    margin-bottom: 32px;
+  }
+
+  .proposal-card-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .icon-done {
+    width: 28px;
+    height: 28px;
+  }
+
+  .icon-done svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-list-item {
+    font-size: 20px;
+    max-width: 448px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    gap: 16px;
+  }
+
+  .proposal .button {
+    max-width: 306px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .proposal {
+    padding: 64px 64px 142px;
+  }
+
+  .proposal-card {
+    padding: 64px;
+    background-position: bottom 79px right;
+  }
+
+  .proposal-card::before {
+    width: 99%;
+    height: 86%;
+    top: 40px;
+    transform: rotate(11deg);
+  }
+
+  .proposal-card::after {
+    left: -24px;
+    width: 102%;
+    transform: rotate(-8deg);
+  }
+
+  .proposal .title-primary {
+    margin-bottom: 134px;
+    max-width: 782px;
+  }
+
+  .proposal-card-title {
+    margin-bottom: 40px;
+  }
+
+  .proposal-card-list {
+    margin-bottom: 39px;
+  }
+
+  .card-list-item:first-child,
+  .card-list-item:nth-child(3) {
+    max-width: 654px;
+  }
+
+  .card-list-item:nth-child(2) {
+    max-width: 538px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .proposal-card {
+    background-image: url('../img/stack_of_books/books@2x.jpg');
+  }
+}
