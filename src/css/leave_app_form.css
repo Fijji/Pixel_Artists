@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1280px) {
   .app-thumb {
     display: flex;
     flex-direction: column;
@@ -54,10 +54,15 @@
     overflow: hidden;
     padding: 0 20px 40px;
     background-color: var(--green);
-    background-image: url(../img/leave_an_app/girl@2x.png);
+    background-image: url(../img/leave_an_app/girl@1x.png);
     background-repeat: no-repeat;
     background-size: 492px;
     background-position: top;
+  }
+}
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .app-thumb {
+    background-image: url(../img/leave_an_app/girl@2x.png);
   }
 }
 
@@ -337,6 +342,7 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--form-agreement-text);
+    width: 500px;
   }
 }
 
