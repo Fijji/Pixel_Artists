@@ -31,7 +31,6 @@
   color: var(--lighter-green);
 }
 
-/* TODO: Apply correct style for the button. It is required to change our_lessons.css */
 .hero-button {
   margin-top: 40px;
   padding: 14px 78px;
