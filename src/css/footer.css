@@ -12,8 +12,7 @@ footer {
 
 .footer-container {
   align-items: normal;
-  /* justify-content: space-between; */
-}
+  }
 
 .footer-logo-adr-bl {
   display: flex;
