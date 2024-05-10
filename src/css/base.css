@@ -8,6 +8,9 @@
   --gray: #f3f5f6;
   --white: #fff;
   --hover-green: #38ae5f;
+  --form-border: rgba(18, 20, 23, 0.1);
+  --form-agreement-text: rgba(18, 20, 23, 0.5);
+  --form-app-text: rgba(255, 255, 255, 0.7);
 }
 
 body {
