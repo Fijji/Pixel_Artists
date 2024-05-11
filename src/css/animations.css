@@ -1,0 +1,20 @@
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

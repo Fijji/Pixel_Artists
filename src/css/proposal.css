@@ -1,10 +1,18 @@
-.proposal {
+.proposal-container {
   background: var(--gradient-green);
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 16px;
+  max-width: 335px;
+}
+
+.proposal {
   padding: 40px 20px 64px;
   z-index: 1;
   overflow: hidden;
+  align-items: initial;
   width: 100%;
+  position: relative;
 }
 
 .proposal .title-primary {
@@ -89,6 +97,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .proposal-container {
+    max-width: 704px;
+  }
+
   .proposal {
     padding: 64px 18px 92px 18px;
     border-radius: 30px;
@@ -157,6 +169,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .proposal-container {
+    max-width: 1152px;
+  }
+
   .proposal {
     padding: 64px 64px 142px;
   }
@@ -182,6 +198,7 @@
   .proposal .title-primary {
     margin-bottom: 134px;
     max-width: 782px;
+    padding: 0;
   }
 
   .proposal-card-title {
