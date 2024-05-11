@@ -9,7 +9,7 @@
   }
 
   .form-button.btn {
-    min-width: 270px;
+    width: 252px;
     padding: 0;
   }
 
@@ -297,7 +297,7 @@
 
 /* Form button */
 .form-button {
-  min-width: 335px;
+  width: 335px;
   height: 52px;
   font-weight: 700;
   font-size: 14px;
