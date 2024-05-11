@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Pixel_Artists/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>englishexcellence</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/Pixel_Artists/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/Pixel_Artists/assets/index-60e5c787.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Pixel_Artists/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>englishexcellence</title>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap" rel="stylesheet">
-  <!-- Styles -->
-  <link rel="stylesheet" type="text/css"
-    href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-  
-  <script type="module" crossorigin src="/Pixel_Artists/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/Pixel_Artists/assets/index-af119b2e.css">
-</head>
-
-<body>
-    <header class="header-section">
+  <body>
+    <!-- Start header -->
+<header class="header-section">
   <div class="container header-container">
     <nav class="page-navigation">
       <a
@@ -32,7 +38,7 @@
         <li class="page-nav-list-item">
           <a
             href="#about"
-            class="page-nav-list-link link"
+            class="page-nav-list-link link-underlined"
             aria-label="link to section about us"
             >About us</a
           >
@@ -40,7 +46,7 @@
         <li class="page-nav-list-item">
           <a
             href="#lessons"
-            class="page-nav-list-link link"
+            class="page-nav-list-link link-underlined"
             aria-label="link to section lessons"
             >Our lessons</a
           >
@@ -48,23 +54,23 @@
         <li class="page-nav-list-item">
           <a
             href="#teachers"
-            class="page-nav-list-link link"
+            class="page-nav-list-link link-underlined"
             aria-label="link to section teachers"
             >Teachers</a
           >
         </li>
         <li class="page-nav-list-item">
           <a
-            href="#feedback"
-            class="page-nav-list-link link"
-            aria-label="link to section feedback"
+            href="#reviews"
+            class="page-nav-list-link link-underlined"
+            aria-label="link to section reviews"
             >Reviews</a
           >
         </li>
         <li class="page-nav-list-item">
           <a
             href="#application-form"
-            class="page-nav-list-link link"
+            class="page-nav-list-link link-underlined"
             aria-label="link to section contact us"
             >Contact us</a
           >
@@ -127,9 +133,11 @@
     </div>
   </div>
 </header>
+<!-- End header -->
 
-    <!-- MOBILE MENU START -->
-<div class="mobile-menu-overlay js-menu-overlay"></div>
+
+    <!-- Start mobile menu -->
+<div class="mobile-menu-overlay js-menu-overlay" id="mobile-menu"></div>
 <div class="mobile-menu js-menu-container">
   <div class="mobile-menu-close">
     <button class="js-close-menu" type="button">
@@ -141,7 +149,7 @@
 
   <ul class="mobile-menu-list">
     <li>
-      <a href="#about-us">About us</a>
+      <a href="#about">About us</a>
     </li>
     <li>
       <a href="#lessons">Our lessons</a>
@@ -153,7 +161,7 @@
       <a href="#reviews">Reviews</a>
     </li>
     <li>
-      <a href="#contact-us">Contact us</a>
+      <a href="#application-form">Contact us</a>
     </li>
   </ul>
 
@@ -189,37 +197,36 @@
     </li>
   </ul>
 </div>
-<!-- MOBILE MENU END -->
+<!-- End mobile menu -->
 
 
-  <main>
-    <!-- Loads the specified .html file -->
-    <!-- Hero Section -->
+    <main>
+      <!-- Start hero section -->
 <section id="hero" class="hero-section">
   <div class="container hero-content">
-    <h1 class="hero-text">
+    <h1 class="hero-text animated">
       Discover the joy of learning
       <span class="hero-english">English</span> with us!
     </h1>
-    <a href="#application-form" class="button hero-button"
+    <a href="#application-form" class="button hero-button animated"
       >Leave an application</a
     >
     <div class="hero-checkmark">
-      <a href="#footer">
-        <div class="hero-checkmark-container">
-          <svg class="hero-svg">
-            <use
-              class="hero-use"
-              xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-checkmark"
-            ></use>
-          </svg>
-        </div>
+      <a href="#application-form" class="hero-checkmark-container animated">
+        <svg class="hero-svg">
+          <use
+            class="hero-use"
+            xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-checkmark"
+          ></use>
+        </svg>
       </a>
     </div>
   </div>
 </section>
+<!-- End hero section -->
 
-    <section class="section about-section">
+      <!-- Start about us section -->
+<section id="about" class="section about-section">
   <div class="container">
     <h2 class="section-title">About <span>Us</span></h2>
     <p class="section-subtitle">
@@ -244,8 +251,10 @@
     </div>
   </div>
 </section>
+<!-- End about us section -->
 
-    <section id="lessons" class="section lesson-section">
+      <!-- Start our lessons section -->
+<section id="lessons" class="section lesson-section ">
   <div class="container">
     <h2 class="section-title">Our <span>lessons</span></h2>
     <p class="section-subtitle">
@@ -274,7 +283,7 @@
           all key areas of English language - reading, writing, listening, and
           speaking. It is a set of basic knowledge and skills.
         </p>
-        <a href="#application-form" class="button lesson-button button-outline"
+        <a href="#application-form" class="button lesson-button active"
           >Leave an application</a
         >
       </li>
@@ -293,61 +302,61 @@
     </ul>
   </div>
 </section>
+<!-- End our lessons section -->
 
-    <section id="proposal" class="section">
-  <div class="container">
-    <div class="proposal">
-      <h2 class="visually-hidden">Proposal to leave an application</h2>
-      <p class="title-primary">
-        Master the <span>Language</span> with Our English Package!
-      </p>
-      <div class="proposal-card">
-        <h3 class="proposal-card-title">Power of English</h3>
-        <ul class="proposal-card-list">
-          <li class="card-list-item">
-            <div class="icon-done">
-              <svg>
-                <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
-              </svg>
-            </div>
+      <!-- Start proposal section -->
+<section id="proposal" class="section proposal-container ">
+  <div class="container proposal">
+    <h2 class="visually-hidden">Proposal to leave an application</h2>
+    <p class="title-primary">
+      Master the <span>Language</span> with Our English Package!
+    </p>
+    <div class="proposal-card">
+      <h3 class="proposal-card-title">Power of English</h3>
+      <ul class="proposal-card-list">
+        <li class="card-list-item">
+          <div class="icon-done">
+            <svg>
+              <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
+            </svg>
+          </div>
 
-            <p>
-              Dive into captivating lessons designed to stimulate your
-              curiosity.
-            </p>
-          </li>
-          <li class="card-list-item">
-            <div class="icon-done">
-              <svg>
-                <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
-              </svg>
-            </div>
+          <p>
+            Dive into captivating lessons designed to stimulate your curiosity.
+          </p>
+        </li>
+        <li class="card-list-item">
+          <div class="icon-done">
+            <svg>
+              <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
+            </svg>
+          </div>
 
-            <p>
-              Learn in a nurturing setting where every student's progress
-              matters.
-            </p>
-          </li>
-          <li class="card-list-item">
-            <div class="icon-done">
-              <svg>
-                <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
-              </svg>
-            </div>
+          <p>
+            Learn in a nurturing setting where every student's progress matters.
+          </p>
+        </li>
+        <li class="card-list-item">
+          <div class="icon-done">
+            <svg>
+              <use xlink:href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-check" />
+            </svg>
+          </div>
 
-            <p>
-              Experience the satisfaction of real progress as your language
-              skills and confidence grow with every session.
-            </p>
-          </li>
-        </ul>
-        <a href="#application-form" class="button">Leave an application</a>
-      </div>
+          <p>
+            Experience the satisfaction of real progress as your language skills
+            and confidence grow with every session.
+          </p>
+        </li>
+      </ul>
+      <a href="#application-form" class="button">Leave an application</a>
     </div>
   </div>
 </section>
+<!-- End proposal section -->
 
-    <section id="teachers" class="section teachers-section">
+      <!-- Start our teachers section -->
+<section id="teachers" class="section teachers-section">
   <div class="container">
     <h2 class="section-title">Meet our <span>teachers</span></h2>
     <p class="section-subtitle subtitle-teachers">
@@ -428,8 +437,10 @@
     </ul>
   </div>
 </section>
+<!-- Start our teachers section -->
 
-    <section id="application-form" class="section leave-form">
+      <!-- Start leave an application section-->
+<section id="application-form" class="section leave-form">
   <div class="container">
     <h2 class="section-title section-app-title">
       Leave an <span>application</span>
@@ -539,7 +550,7 @@
             <label class="form-radio-label" for="radio-input">Volodymyr</label>
           </div>
         </fieldset>
-        <button class="form-button btn" type="submit">Send</button>
+        <button class="form-button button btn" type="submit">Send</button>
         <p class="agreement-text">
           By clicking on “Send” button, you agree to our
           <a
@@ -555,7 +566,10 @@
     </div>
   </div>
 </section>
-    <section class="section section-reviews" id="reviews">
+<!-- End leave an application section-->
+
+      <!-- Start reviews section -->
+<section class="section section-reviews" id="reviews">
   <div class="container">
     <h2 class="section-title">
       What our <span class="accent">students</span> say
@@ -572,8 +586,8 @@
             src="/Pixel_Artists/assets/img-5@1x-432ab75e.jpg"
             alt="student avatar"
             class="avatar"
-            width="50px"
-            height="50px"
+            width="50"
+            height="50"
           />
           <div class="person-name">
             <p class="name">Anna</p>
@@ -593,8 +607,8 @@
             src="data:image/jpeg;base64,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"
             alt="student avatar"
             class="avatar"
-            width="50px"
-            height="50px"
+            width="50"
+            height="50"
           />
           <div class="person-name">
             <p class="name">Mykchailo</p>
@@ -614,8 +628,8 @@
             src="/Pixel_Artists/assets/img-7@1x-2976b566.jpg"
             alt="student avatar"
             class="avatar"
-            width="50px"
-            height="50px"
+            width="50"
+            height="50"
           />
           <div class="person-name">
             <p class="name">Viktoria</p>
@@ -631,134 +645,147 @@
     </ul>
   </div>
 </section>
+<!-- End reviews section -->
 
-  </main>
 
-  <footer>
-    <div class="container footer-container" id="footer">
-  <div class="footer-blocks">
-    <div class="footer-logo-adr-bl">
-      <div class="footer-logo">
-        <a class="footer-logo-link" href="index.html">
-          english<span class="footer-logo-part">excellence</span>.
-        </a>
+    </main>
+
+    <!-- Start footer -->
+<footer class="footer">
+  <div class="container footer-container" id="footer">
+    <div class="footer-blocks">
+      <div class="footer-logo-adr-bl">
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="index.html">
+            english<span class="footer-logo-part">excellence</span>.
+          </a>
+        </div>
+        <div class="footer-adr" id="contact-us">
+          <address class="footer-adress">
+            <ul class="footer-adr-list">
+              <li class="footer-adr-li">
+                <p class="footer-adr-paragraphs">Phone number:</p>
+                <a class="footer-adr" href="tel:+380(68)4439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-adr-li">
+                <p class="footer-adr-paragraphs">Address:</p>
+                <a
+                  class="footer-adr"
+                  href="https://maps.app.goo.gl/27njs34FjTBPNrCe6"
+                  >32a M. Bazhana ave</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
-      <div class="footer-adr" id="contact-us">
-        <address class="footer-adress">
-          <ul class="footer-adr-list">
-            <li class="footer-adr-li">
-              <p class="footer-adr-paragraphs">Phone number:</p>
-              <a class="footer-adr" href="tel:+380(68)4439426"
-                >+380 (68) 443-94-26</a
+      <div class="footer-navigation">
+        <nav class="footer-links">
+          <ul class="footer-nav">
+            <li class="footer-nav-li">
+              <a class="footer-nav-link link-underlined" href="#about"
+                >About us</a
               >
             </li>
-            <li class="footer-adr-li">
-              <p class="footer-adr-paragraphs">Address:</p>
+            <li class="footer-nav-li">
+              <a class="footer-nav-link link-underlined" href="#lessons"
+                >Our lessons</a
+              >
+            </li>
+            <li class="footer-nav-li">
+              <a class="footer-nav-link link-underlined" href="#teachers"
+                >Teachers</a
+              >
+            </li>
+            <li class="footer-nav-li">
+              <a class="footer-nav-link link-underlined" href="#reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="footer-nav-li">
               <a
-                class="footer-adr"
-                href="https://maps.app.goo.gl/27njs34FjTBPNrCe6"
-                >32a M. Bazhana ave</a
+                class="footer-nav-link link-underlined"
+                href="#application-form"
+                >Contact us</a
               >
             </li>
           </ul>
-        </address>
+        </nav>
       </div>
-    </div>
-    <div class="footer-navigation">
-      <nav class="footer-links">
-        <ul class="footer-nav">
-          <li class="footer-nav-li">
-            <a class="footer-nav-links" href="#about-us">About us</a>
+      <div class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-li">
+            <a
+              class="social-list-link"
+              href="https://www.facebook.com/goITclub/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to facebook.com"
+            >
+              <svg class="footer-icons" width="28" height="28">
+                <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-nav-li">
-            <a class="footer-nav-links" href="#lessons">Our lessons</a>
+          <li class="footer-social-li">
+            <a
+              class="social-list-link"
+              href="https://www.instagram.com/goitclub/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to instagram.com"
+            >
+              <svg class="footer-icons" width="28" height="28">
+                <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-insta"></use>
+              </svg>
+            </a>
           </li>
-          <li class="footer-nav-li">
-            <a class="footer-nav-links" href="#teachers">Teachers</a>
-          </li>
-          <li class="footer-nav-li">
-            <a class="footer-nav-links" href="#reviews">Reviews</a>
-          </li>
-          <li class="footer-nav-li">
-            <a class="footer-nav-links" href="#contact-us">Contact us</a>
+          <li class="footer-social-li">
+            <a
+              class="social-list-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to youtube.com"
+            >
+              <svg class="footer-icons" width="28" height="28">
+                <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
-    <div class="footer-social">
-      <ul class="footer-social-list">
-        <li class="footer-social-li">
-          <a
-            class="social-list-link"
-            href="https://www.facebook.com/goITclub/ "
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to facebook.com"
-          >
-            <svg class="footer-icons" width="28" height="28">
-              <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-facebook"></use>
-            </svg>
-          </a>
+    <div class="footer-svg-line">
+      <svg class="footer-line" width="1024" height="0">
+        <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-line"></use>
+      </svg>
+    </div>
+    <div class="footer-agreements">
+      <p class="footer-copy-paragraphs">
+        ©2023 English Excellence. All rights reserved.
+      </p>
+      <ul class="footer-agreements-list">
+        <li class="foter-policy">
+          <a class="footer-policy-link" href="#">Privacy Policy</a>
         </li>
-        <li class="footer-social-li">
-          <a
-            class="social-list-link"
-            href="https://www.instagram.com/goitclub/ "
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to instagram.com"
-          >
-            <svg class="footer-icons" width="28" height="28">
-              <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-li">
-          <a
-            class="social-list-link"
-            href="https://www.youtube.com/c/GoIT"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to youtube.com"
-          >
-            <svg class="footer-icons" width="28" height="28">
-              <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-youtube"></use>
-            </svg>
-          </a>
+        <li class="footer-policy">
+          <a class="footer-policy-link" href="#">Terms of Service</a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="footer-svg-line">
-    <svg class="footer-line" width="1024" height="0">
-      <use href="/Pixel_Artists/assets/icons-7628fdbf.svg#icon-line"></use>
-    </svg>
-  </div>
-  <div class="footer-agreements">
-    <p class="footer-copy-paragraphs">
-      ©2023 English Excellence. All rights reserved.
-    </p>
-    <ul class="footer-agreements-list">
-      <li class="foter-policy">
-        <a class="footer-policy-link" href="#">Privacy Policy</a>
-      </li>
-      <li class="footer-policy">
-        <a class="footer-policy-link" href="#">Terms of Service</a>
-      </li>
-    </ul>
-  </div>
-</div>
+</footer>
+<!-- End footer -->
 
-  </footer>
-
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  
-
-</body>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
 </html>
