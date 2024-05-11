@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms var(--common-transition);
 }
 
 .mobile-menu-close button,
@@ -123,11 +123,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms var(--common-transition);
 }
 
 .mobile-menu-socials a:hover {

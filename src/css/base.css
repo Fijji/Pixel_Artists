@@ -11,6 +11,11 @@
   --form-border: rgba(18, 20, 23, 0.1);
   --form-agreement-text: rgba(18, 20, 23, 0.5);
   --form-app-text: rgba(255, 255, 255, 0.7);
+  --common-transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +60,8 @@ a {
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -94,28 +100,13 @@ a {
   border-radius: 12px;
   padding: 14px 32px;
   border: none;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--common-transition);
+  transition-property: background-color, color;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--hover-green);
-}
-
-.button-outline {
-  background-color: transparent;
-  border: 1px solid var(--white);
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-outline:hover,
-.button-outline:focus {
-  background-color: var(--white);
-  color: var(--green);
 }
 
 .visually-hidden {
@@ -129,6 +120,29 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.link-underlined::after,
+.link-underlined:focus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--green);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 250ms var(--common-transition);
+  transition-property: transform, opacity;
+}
+
+.link-underlined:hover::after,
+.link-underlined:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 768px) {
@@ -160,10 +174,12 @@ a {
 
   .section-title {
     font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
   }
 
   .section-title span::after {
-    top: calc(100% - 16px);
+    top: calc(100% - 18px);
     height: 16px;
   }
 
@@ -189,13 +205,4 @@ a {
     top: calc(100% - 20px);
     height: 20px;
   }
-}
-
-.header-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  align-items: center;
-  background-color: var(--white);
-  flex-direction: row;
 }

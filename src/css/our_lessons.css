@@ -11,6 +11,12 @@
   padding: 40px 20px;
   border: 1px solid var(--green);
   border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 250ms var(--common-transition);
+}
+
+.lesson-item:hover {
+  background-color: var(--green);
 }
 
 .lesson-item-title {
@@ -37,12 +43,51 @@
   text-align: center;
 }
 
+.lesson-item-price,
+.lesson-item-title,
+.lesson-item-text {
+  transition: 250ms var(--common-transition);
+  transition-property: opacity, color;
+}
+
+.lesson-item:hover .lesson-item-price,
+.lesson-item:hover .lesson-item-title {
+  color: var(--white);
+}
+
+.lesson-item:hover .lesson-item-text {
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.lesson-item:hover .lesson-button {
+  border: 1px solid;
+  border-color: var(--white);
+}
+
 .lesson-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: auto;
+  height: 52px;
+  border: 1px solid var(--green);
+  transition: 250ms var(--common-transition);
+  transition-property: background-color, border-color;
+}
+
+.lesson-button.active {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  transition: 250ms var(--common-transition);
+  transition-property: color, background-color;
+}
+
+.lesson-button.active:hover,
+.lesson-button.active:focus {
+  background-color: var(--white);
+  color: var(--green);
 }
 
 .active-item {
@@ -65,6 +110,7 @@
 
   .lesson-item {
     flex-basis: calc((100% - 32px) / 2);
+    padding: 32px 16px;
   }
 
   .lesson-item-price {
@@ -73,11 +119,15 @@
 
   .lesson-item-text {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.5;
     margin-bottom: 32px;
     color: var(--black);
     opacity: 0.5;
     text-align: center;
+  }
+
+  .lesson-button {
+    height: 60px;
   }
 }
 
