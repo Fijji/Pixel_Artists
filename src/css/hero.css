@@ -72,22 +72,18 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: 250ms var(--common-transition);
+  transition-property: background-color, fill;
 }
 
 .hero-checkmark-container:hover,
 .hero-checkmark-container:focus {
   background-color: var(--green);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-checkmark-container:hover .hero-use,
 .hero-checkmark-container:focus .hero-use {
   fill: var(--white);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* For tablets */
