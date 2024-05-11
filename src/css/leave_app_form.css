@@ -1,9 +1,3 @@
-@media only screen and (min-width: 1280px) {
-  .app-container {
-    padding: 0 128px;
-  }
-}
-
 .app-form-container {
   display: flex;
 }

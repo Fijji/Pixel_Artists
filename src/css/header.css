@@ -65,9 +65,8 @@
 
 @media screen and (min-width: 1280px) {
   .header-container {
-    max-width: 1024px;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 1152px;
+    padding: 20px 64px;
   }
 
   .header-section {
@@ -137,7 +136,8 @@
     line-height: 0;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 10px;
-    transition: fill var(--common-transition),
+    transition:
+      fill var(--common-transition),
       border-color var(--common-transition);
   }
 
@@ -145,7 +145,6 @@
   .page-header-socials-link:focus {
     fill: var(--green);
   }
-
 
   .page-header-socials-link:hover,
   .page-header-socials-link:focus {
